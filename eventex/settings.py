@@ -5,6 +5,7 @@ import dj_database_url
 PROJECT_DIR = Path(__file__).parent
 
 DEBUG = True
+SOUTH_TEST_MIGRATE = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
