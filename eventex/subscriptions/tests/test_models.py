@@ -10,7 +10,8 @@ class SubscriptionTest(TestCase):
 				name = 'Marcos Saito',
 				cpf = '12345678901',
 				email = 'marcos@saito.net',
-				phone = '21-96186190'
+				phone = '21-96186190',
+				paid = False
 			)
 	
 	def test_create(self):
@@ -25,3 +26,7 @@ class SubscriptionTest(TestCase):
 
 	def test_unicode(self):
 		self.assertEqual(u'Marcos Saito', unicode(self.obj	))
+
+	def test_paid_default_value_is_False(self):
+		'By default piad must be False.'
+		self.assertEqual(False, self.obj.paid)
