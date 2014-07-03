@@ -114,6 +114,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'south',
     'eventex.core',
     'eventex.subscriptions',
     # Uncomment the next line to enable the admin:
