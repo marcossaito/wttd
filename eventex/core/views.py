@@ -15,6 +15,9 @@ def homepage(request):
 	context = RequestContext(request)
 	return render_to_response('index.html', context)
 
+def speakers(request):
+	return HttpResponse()
+
 def speaker_detail(request, slug):
 	speaker = get_object_or_404(Speaker, slug=slug)
 	context = {'speaker': speaker}

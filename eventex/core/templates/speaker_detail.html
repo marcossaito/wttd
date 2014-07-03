@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+<p><a href="{% url core:speakers %}">Pelestrantes</a></p>
 <h4><a href="{{ speaker.url }}">{{ speaker.name }}</a></h4>
 <p>{{ speaker.description }}</p>
 {% endblock content %}

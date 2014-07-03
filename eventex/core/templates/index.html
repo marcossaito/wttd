@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 	<img src="{{ STATIC_URL }}img/logo.jpg" />
+	<p><a href="{% url core:speakers %}">Pelestrantes</a></p>
 	<h1>Bem vindo ao Eventex!</h1>
 	<p><a href="{% url subscriptions:subscribe %}"> Inscreva-se já! </a></p>
 {% endblock content %}
