@@ -1,3 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
+<p>Palestrantes</p>
+{%for x in speakers %}
+	<li><a href="{{ x.slug }}">{{ x.name }}</a></li>
+{% endfor %}
+<a href="/">Voltar<a>
 {% endblock content %}
